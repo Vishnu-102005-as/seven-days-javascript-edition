@@ -1,0 +1,45 @@
+body {
+    background-color: #0b0f19;
+    color: #00f0ff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.soundboard-container {
+    text-align: center;
+    border: 2px solid #00f0ff;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+    background: rgba(11, 15, 25, 0.8);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pad {
+    background: #121829;
+    color: #ff007f;
+    border: 2px solid #ff007f;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.2);
+    transition: all 0.2s ease-in;
+}
+
+.pad:active,
+.pad.active {
+    background: #ff007f;
+    color: #0b0f19;
+    box-shadow: 0 0 25px #ff007f;
+    transform: scale(0.93);
+}
